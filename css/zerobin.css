@@ -451,10 +451,76 @@ span.commentdate {
 	color: #BFCEDE;
 }
 
-img.vizhash {
-	width:16px;
-	height:16px;
-	position:relative;
-	top:2px;
-	left:-3px;
+/* Pretty printing styles. Used with prettify.js. */
+
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln {   /* plain text */
+	color: #000;
 }
+
+.str {   /* string content */
+	color: #181;
+	font-style:italic;
+}
+
+.kwd {   /* a keyword */
+	color: #369;
+ }
+
+.com {   /* a comment */
+	color: #666;
+}
+
+.typ {   /* a type name */
+	color: #c40;
+}
+
+.lit {   /* a literal value */
+	color: #900
+}
+
+.pun, .opn, .clo { /* punctuation, lisp open bracket, lisp close bracket */
+	color: #000;
+	font-weight:bold;
+}
+
+.tag {   /* a markup tag name */
+	color: #369;
+	font-weight:bold;
+}
+
+.atn {   /* a markup attribute name */
+	color: #939;
+	font-weight:bold;
+}
+
+.atv {   /* a markup attribute value */
+	color: #181;
+}
+
+.dec, .var {   /* a declaration; a variable name */
+	color: #606;
+}
+
+.fun {   /* a function name */
+	color: red;
+}
+
+pre.prettyprint { /* Put a border around prettyprinted code snippets. */
+	padding: 2px;
+	border: 1px solid #888;
+	background-color:white;
+	white-space:pre-wrap;
+}
+
+ol.linenums { /* Specify class=linenums on a pre to get line numbering */
+	color: black;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: decimal outside;
+}
+
+li.L1,li.L3,li.L5,li.L7,li.L9 { /* Alternate shading for lines */
+	background: #ddd
+}
+
